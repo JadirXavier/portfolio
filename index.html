@@ -20,12 +20,12 @@
       <nav class="nav-bar">
         <h2>Portfólio</h2>
         <ul>
-          <li><a>Home</a></li>
-          <li><a>Projetos</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projetos">Projetos</a></li>
         </ul>
       </nav>
     </header>
-    <div class="home">
+    <div class="home" id="home">
       <div class="home-l">
         <div class="intro">
           <h1>Jadir de Oliveira Xavier Filho</h1>
@@ -106,7 +106,12 @@
         </div>
       </div>
     </div>
-    <div class="projetos">
+    <div class="container">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+    </div>
+    <div class="projetos" id="projetos">
       <h2>Projetos</h2>
       <ul class="container-projetos">
         <li class="projeto">
@@ -115,7 +120,6 @@
             Descrição do projeto, tecnologias utilizadas e seu papel no
             desenvolvimento.
           </p>
-          <div class="navegacao"></div>
           <div class="tecnologias">
             <img
               alt="Js"
@@ -138,6 +142,8 @@
               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
             />
           </div>
+          <img src="./imgs/contador-carboidratos.png" />
+          <div class="navegacao">Navegação</div>
         </li>
         <li class="projeto">
           <h3>Título do Projeto</h3>
@@ -162,6 +168,7 @@
         </li>
       </ul>
     </div>
+
     <footer>
       <p>&copy; 2023 Jadir de Oliveira. All rights reserved</p>
     </footer>
