@@ -50,7 +50,7 @@ h1,
 h2,
 .nav-bar h2,
 .nav-bar li,
- a {
+a {
   color: var(--cortexto1);
 }
 
@@ -109,10 +109,6 @@ a:visited {
   transition: all 0.3s ease;
 }
 
-.nav-bar a:hover::after {
-  transform: scaleX(1);
-}
-
 .home {
   display: flex;
   min-height: 100vh;
@@ -154,11 +150,6 @@ a {
   transition: all 0.3s ease;
 }
 
-.contato a img:hover {
-  transform: scale(1.05);
-  transition: all 0.3s ease;
-}
-
 .icone {
   position: relative;
 }
@@ -178,11 +169,6 @@ a {
   visibility: hidden;
   transition: all 0.3s ease;
   font-size: 1rem;
-}
-
-.icone:hover::after {
-  opacity: 1;
-  visibility: visible;
 }
 
 .home-r {
@@ -212,11 +198,6 @@ a {
   transition: all 0.3s ease;
 }
 
-.stack > a > img:hover {
-  transform: scale(1.05);
-  transition: all 0.3s ease;
-}
-
 .projetos {
   background-color: var(--corbody2);
   display: flex;
@@ -232,10 +213,6 @@ a {
   display: grid;
   grid-gap: 3rem;
   justify-items: center;
-}
-
-.container-projetos > :hover {
-  transform: scale(1.05);
 }
 
 .projeto {
@@ -296,11 +273,6 @@ a {
   transition: transform 0.3s ease;
 }
 
-.projeto > .navegacao > a:hover {
-  transition: transform 0.3s ease;
-  transform: scale(1.05);
-}
-
 .projeto > img {
   width: 100%;
   height: 100%;
@@ -333,6 +305,36 @@ footer p {
   width: 2rem;
   height: 2rem;
   transition: all 0.3s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .nav-bar a:hover::after {
+    transform: scaleX(1);
+  }
+
+  .contato a img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+
+  .icone:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .stack > a > img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+
+  .container-projetos > :hover {
+    transform: scale(1.05);
+  }
+
+  .projeto > .navegacao > a:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+  }
 }
 
 @media screen and (max-width: 1060px) {
