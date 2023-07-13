@@ -49,6 +49,7 @@ h2 {
 h1,
 h2,
 .nav-bar h2,
+.nav-bar li,
  a {
   color: var(--cortexto1);
 }
